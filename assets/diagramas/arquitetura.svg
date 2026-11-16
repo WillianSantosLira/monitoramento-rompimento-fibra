@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="440" rx="14" fill="#ffffff"/>
+  <text x="30" y="42" font-size="20" font-weight="700" fill="#0f2557">De onde vêm os dados e para onde vão</text>
+
+  <!-- entradas -->
+  <text x="30" y="84" font-size="13" font-weight="700" fill="#64748b">ENTRADAS</text>
+  <g font-size="14" fill="#0f2557">
+    <rect x="30" y="96" width="230" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="46" y="120" font-weight="700">Radius</text>
+    <text x="46" y="140" font-size="12" fill="#475569">sessões: quem caiu e quem voltou</text>
+
+    <rect x="30" y="166" width="230" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="46" y="190" font-weight="700">Banco do ERP (leitura)</text>
+    <text x="46" y="210" font-size="12" fill="#475569">clientes, caixas, portas, OLTs</text>
+
+    <rect x="30" y="236" width="230" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="46" y="260" font-weight="700">ACS dos roteadores</text>
+    <text x="46" y="280" font-size="12" fill="#475569">só registro: atrasa horas</text>
+
+    <rect x="30" y="306" width="230" height="58" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="46" y="330" font-weight="700">Zabbix (webhook)</text>
+    <text x="46" y="350" font-size="12" fill="#475569">alarme de porta, OLT e manutenção</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#seta)">
+    <path d="M262 125 L372 200"/>
+    <path d="M262 195 L372 215"/>
+    <path d="M262 265 L372 235"/>
+    <path d="M262 335 L372 250"/>
+  </g>
+
+  <!-- servico -->
+  <rect x="376" y="96" width="268" height="268" rx="14" fill="#0f2557"/>
+  <text x="400" y="132" font-size="18" font-weight="700" fill="#ffffff">Rede <tspan fill="#f5a623">Alerta</tspan></text>
+  <text x="400" y="154" font-size="12" fill="#a9b8d9">Python · FastAPI · um processo só</text>
+  <g font-size="13" fill="#ffffff">
+    <rect x="396" y="172" width="228" height="36" rx="8" fill="#1d3a7a"/>
+    <text x="410" y="195">Agendador: rotinas automáticas</text>
+    <rect x="396" y="216" width="228" height="36" rx="8" fill="#1d3a7a"/>
+    <text x="410" y="239">Painel web (ao vivo)</text>
+    <rect x="396" y="260" width="228" height="36" rx="8" fill="#1d3a7a"/>
+    <text x="410" y="283">API para o bot e o Zabbix</text>
+    <rect x="396" y="304" width="228" height="36" rx="8" fill="#1d3a7a"/>
+    <text x="410" y="327">PostgreSQL (estado e histórico)</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#seta)">
+    <path d="M646 190 L736 125"/>
+    <path d="M646 234 L736 195"/>
+    <path d="M646 278 L736 265"/>
+    <path d="M646 322 L736 335"/>
+  </g>
+
+  <!-- saidas -->
+  <text x="740" y="84" font-size="13" font-weight="700" fill="#64748b">SAÍDAS</text>
+  <g font-size="14" fill="#0f2557">
+    <rect x="740" y="96" width="230" height="58" rx="10" fill="#fdecec" stroke="#f0b4b4"/>
+    <text x="756" y="120" font-weight="700">API do ERP</text>
+    <text x="756" y="140" font-size="12" fill="#475569">abre e finaliza a OS</text>
+
+    <rect x="740" y="166" width="230" height="58" rx="10" fill="#eef4ff" stroke="#b9cdf3"/>
+    <text x="756" y="190" font-weight="700">Equipe técnica</text>
+    <text x="756" y="210" font-size="12" fill="#475569">painel, mapa e alertas</text>
+
+    <rect x="740" y="236" width="230" height="58" rx="10" fill="#fff7e6" stroke="#f5d08a"/>
+    <text x="756" y="260" font-weight="700">Bot de atendimento</text>
+    <text x="756" y="280" font-size="12" fill="#475569">"meu bairro tem problema?"</text>
+
+    <rect x="740" y="306" width="230" height="58" rx="10" fill="#eaf7ef" stroke="#a6dcbc"/>
+    <text x="756" y="330" font-weight="700">Alerta de saúde</text>
+    <text x="756" y="350" font-size="12" fill="#475569">avisa se o sistema parar</text>
+  </g>
+
+  <text x="30" y="412" font-size="12" fill="#94a3b8">O ERP só é escrito pela API oficial; o banco dele é lido, nunca alterado.</text>
+</svg>

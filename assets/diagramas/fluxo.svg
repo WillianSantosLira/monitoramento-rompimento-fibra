@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="330" rx="14" fill="#ffffff"/>
+  <text x="30" y="42" font-size="20" font-weight="700" fill="#0f2557">Do sinal caído até a OS fechada</text>
+  <text x="30" y="66" font-size="14" fill="#64748b">Quatro etapas que rodam sozinhas, sem ninguém olhando</text>
+
+  <!-- 1 -->
+  <rect x="30" y="95" width="210" height="190" rx="12" fill="#fff7e6" stroke="#f5a623" stroke-width="2"/>
+  <text x="50" y="128" font-size="13" font-weight="700" fill="#b26a00">1 · A CADA 30 s</text>
+  <text x="50" y="154" font-size="18" font-weight="700" fill="#0f2557">Detecta</text>
+  <text x="50" y="184" font-size="13" fill="#334155">Clientes caindo juntos</text>
+  <text x="50" y="203" font-size="13" fill="#334155">no mesmo ponto da rede.</text>
+  <text x="50" y="230" font-size="13" fill="#334155">5 clientes em 2 min na porta</text>
+  <text x="50" y="249" font-size="13" fill="#334155">ou 20 em 1 min na OLT</text>
+  <text x="50" y="268" font-size="13" fill="#334155">→ suspeita</text>
+
+  <line x1="244" y1="190" x2="272" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- 2 -->
+  <rect x="276" y="95" width="210" height="190" rx="12" fill="#eef4ff" stroke="#3b6fd8" stroke-width="2"/>
+  <text x="296" y="128" font-size="13" font-weight="700" fill="#2851a3">2 · DEPOIS DE 2 min</text>
+  <text x="296" y="154" font-size="18" font-weight="700" fill="#0f2557">Confirma</text>
+  <text x="296" y="184" font-size="13" fill="#334155">Metade ou mais ainda</text>
+  <text x="296" y="203" font-size="13" fill="#334155">desconectada.</text>
+  <text x="296" y="230" font-size="13" fill="#334155">2 caixas ou mais (ou a</text>
+  <text x="296" y="249" font-size="13" fill="#334155">OLT inteira), fora de</text>
+  <text x="296" y="268" font-size="13" fill="#334155">manutenção programada</text>
+
+  <line x1="490" y1="190" x2="518" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- 3 -->
+  <rect x="522" y="95" width="210" height="190" rx="12" fill="#fdecec" stroke="#d64545" stroke-width="2"/>
+  <text x="542" y="128" font-size="13" font-weight="700" fill="#a12f2f">3 · 90 s DEPOIS</text>
+  <text x="542" y="154" font-size="18" font-weight="700" fill="#0f2557">Abre a OS</text>
+  <text x="542" y="184" font-size="13" fill="#334155">Uma ordem de serviço no</text>
+  <text x="542" y="203" font-size="13" fill="#334155">ERP, com os clientes ligados.</text>
+  <text x="542" y="230" font-size="13" fill="#334155">Queda da OLT inteira e das</text>
+  <text x="542" y="249" font-size="13" fill="#334155">portas dela viram uma OS só</text>
+
+  <line x1="736" y1="190" x2="764" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- 4 -->
+  <rect x="768" y="95" width="202" height="190" rx="12" fill="#eaf7ef" stroke="#22995a" stroke-width="2"/>
+  <text x="788" y="128" font-size="13" font-weight="700" fill="#18703f">4 · A CADA 5 min</text>
+  <text x="788" y="154" font-size="18" font-weight="700" fill="#0f2557">Fecha</text>
+  <text x="788" y="184" font-size="13" fill="#334155">80% dos clientes de</text>
+  <text x="788" y="203" font-size="13" fill="#334155">volta → finaliza a OS.</text>
+  <text x="788" y="230" font-size="13" fill="#334155">Se falhar, tenta de novo</text>
+  <text x="788" y="249" font-size="13" fill="#334155">na próxima rodada.</text>
+  <text x="788" y="268" font-size="13" fill="#334155">Limite: 12 h aberta</text>
+
+  <text x="30" y="312" font-size="12" fill="#94a3b8">Suspeita que não se confirma é descartada e fica registrada, sem abrir OS.</text>
+</svg>
